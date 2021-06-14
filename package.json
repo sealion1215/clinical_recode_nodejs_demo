@@ -1,0 +1,46 @@
+{
+  "name": "clinical_record_nodejs_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
+  },
+  "_moduleAliases": {
+    "@controllers": "src/controllers",
+    "@types": "src/types",
+    "@dbAccess": "src/dbAccess",
+    "@services": "src/services",
+    "config": "src/config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sealion1215/clinical_record_nodejs_demo.git"
+  },
+  "author": "Simon Shee",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/sealion1215/clinical_record_nodejs_demo/issues"
+  },
+  "homepage": "https://github.com/sealion1215/clinical_record_nodejs_demo#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dayjs": "^1.10.5",
+    "email-validator": "^2.0.4",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "md5": "^2.3.0",
+    "module-alias": "^2.2.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.7",
+    "typescript": "^4.3.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.12",
+    "@types/jsonwebtoken": "^8.5.1",
+    "@types/mysql": "^2.15.18"
+  }
+}
